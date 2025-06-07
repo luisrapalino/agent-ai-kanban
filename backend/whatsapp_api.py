@@ -8,14 +8,6 @@ import textwrap
 
 app = FastAPI()
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=["https://4527-190-249-59-180.ngrok-free.app"],  # Cambia al puerto de tu frontend si es diferente
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-#     allow_credentials=True,
-# )
-
 
 def limpiar(texto):
     texto = texto.replace("**", "").replace("*", "")
